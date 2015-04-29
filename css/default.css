@@ -1,0 +1,84 @@
+/* Instruction Text Style */
+#instruction {
+  font-family: Georgia;
+  font-size: 2em;
+
+  position: absolute;
+  top: 10px;
+  left: 55px;
+}
+
+/* Positioning buttons and making sure that they are hidden from the start */
+
+#group_1 {
+	display:none;
+  
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+#group_2 {
+	display: none;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+#group_3 {
+	display: none;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+#reset {
+	display: none;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+
+/* Styles for the Answers and thier container */
+
+.container-img {
+  position: relative;
+  top: 100px;
+	padding: 2%;
+	opacity: 0;
+}
+
+.container-img .mix,
+.container-img .gap{
+  display: inline-block;
+  width: 200px;
+}
+
+.container-img .mix{
+  text-align: left;
+  background: #03899c;
+  margin: 2%;
+  display: none;
+}
+
+.container-img .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.container-img .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.container-img .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.container-img .mix:before{
+}

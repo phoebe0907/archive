@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Every Day</title> 
+    
+    <script src="js/json2.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src= "js/moment-2.8.3.js"></script>
+
+  <script src="js/clndr.js"></script>
+  <script src="js/test.js"></script>
+
+  <!-- Enable live-reloading in the browser without an extension -->
+  <script src="http://localhost:35729/livereload.js"></script>   
+</head>
+
+<body>
+    <div id='header'>
+  <nav>
+    <a href='home.html'>About</a>
+    <a href='timeline.html'>Timeline</a>
+    <a href='gallery.html'>Gallery</a>
+    <span id='location'></span>
+  </nav>
+</div>
+<div class='panelize'>
+  <section class='panel one' id='panelOne'>
+    <article>
+      <div class='container'>
+        <header>
+          <h1>Every Day</h1>
+          <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        </header>
+        <div class='content' id="content1">
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class='panel two' id='panelTwo'>
+    <article>
+      <div class='container'>
+        <header>
+        </header>
+        <div class='content' id="clndr-size">
+             <div id="default" class="cal1">
+                 <div class="clndr">
+                    <div class="clndr-controls">
+                        <div class="clndr-control-button">
+                          <span class="clndr-previous-button">previous</span>
+                        </div>
+                        <h2 class="month">April 2015</h2>
+                        <div class="clndr-control-button rightalign"
+                          <span class="clndr-next-button">next</span>
+                        </div>
+                    </div>
+                    <table class="clndr-table" border="0" cellspacing="0" cellpadding="0">
+                       <thead>
+                          <tr class="header-days">
+                          <td class="header-day">S</td>
+                          <td class="header-day">M</td>
+                          <td class="header-day">T</td>
+                          <td class="header-day">W</td>
+                          <td class="header-day">T</td>
+                          <td class="header-day">F</td>
+                          <td class="header-day">S</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                               <td class="day past adjacent-month last-month calendar-day-2015-03-29 calendar-dow-0">
+                                  <div class="day-contents">29</div>
+                               </td>
+                               <td class="day past adjacent-month last-month calendar-day-2015-03-30 calendar-dow-1">
+                                  <div class="day-contents">30</div>
+                               </td>
+                               <td class="day past adjacent-month last-month calendar-day-2015-03-31 calendar-dow-2">
+                                  <div class="day-contents">31</div>
+                               </td>
+                               <td class="day past event calendar-day-2015-04-01 calendar-dow-3">
+                                  <div class="day-contents" id='clndr-0401'>1</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-02 calendar-dow-4">
+                                  <div class="day-contents">2</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-03 calendar-dow-5">
+                                  <div class="day-contents">3</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-04 calendar-dow-6">
+                                  <div class="day-contents">4</div></td></tr><tr>
+                               <td class="day past calendar-day-2015-04-05 calendar-dow-0">
+                                  <div class="day-contents">5</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-06 calendar-dow-1">
+                                  <div class="day-contents">6</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-07 calendar-dow-2">
+                                  <div class="day-contents">7</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-08 calendar-dow-3">
+                                  <div class="day-contents">8</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-09 calendar-dow-4">
+                                  <div class="day-contents">9</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-10 calendar-dow-5">
+                                  <div class="day-contents">10</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-11 calendar-dow-6">
+                                  <div class="day-contents">11</div>
+                               </td>
+                          </tr>
+                          <tr>
+                               <td class="day past calendar-day-2015-04-12 calendar-dow-0">
+                                  <div class="day-contents">12</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-13 calendar-dow-1">
+                                  <div class="day-contents">13</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-14 calendar-dow-2">
+                                  <div class="day-contents">14</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-15 calendar-dow-3">
+                                  <div class="day-contents">15</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-16 calendar-dow-4">
+                                  <div class="day-contents">16</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-17 calendar-dow-5">
+                                  <div class="day-contents">17</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-18 calendar-dow-6">
+                                  <div class="day-contents">18</div>
+                               </td>
+                          </tr>
+                               
+                          <tr>
+                               <td class="day past calendar-day-2015-04-19 calendar-dow-0">
+                                  <div class="day-contents">19</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-20 calendar-dow-1">
+                                  <div class="day-contents">20</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-21 calendar-dow-2">
+                                  <div class="day-contents">21</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-22 calendar-dow-3">
+                                   <div class="day-contents">22</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-23 calendar-dow-4">
+                                   <div class="day-contents">23</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-24 calendar-dow-5">
+                                   <div class="day-contents">24</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-25 calendar-dow-6">
+                                   <div class="day-contents">25</div>
+                               </td>
+                           </tr>
+                               
+                           <tr>
+                               <td class="day past calendar-day-2015-04-26 calendar-dow-0">
+                                   <div class="day-contents">26</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-27 calendar-dow-1">
+                                   <div class="day-contents">27</div>
+                               </td>
+                               <td class="day past calendar-day-2015-04-28 calendar-dow-2">
+                                   <div class="day-contents">28</div>
+                               </td>
+                               <td class="day today calendar-day-2015-04-29 calendar-dow-3">
+                                   <div class="day-contents">29</div>
+                               </td>
+                               <td class="day calendar-day-2015-04-30 calendar-dow-4">
+                                   <div class="day-contents">30</div>
+                               </td>
+                               <td class="day adjacent-month next-month calendar-day-2015-05-01 calendar-dow-5">
+                                   <div class="day-contents">1</div>
+                               </td>
+                               <td class="day adjacent-month next-month calendar-day-2015-05-02 calendar-dow-6">
+                                   <div class="day-contents">2</div>
+                               </td>
+                            </tr>
+                         </tbody>
+                    </table>
+                    <div class="events">
+                <div class="headers">
+                  <div class="x-button">x</div>
+                  <div class="event-header">EVENTS</div>
+                </div>
+                <div class="events-list">
+                  
+                    <div class="event">
+                      <a href="">April 10th: Persian Kitten Auction</a>
+                    </div>
+                  
+                    <div class="event">
+                      <a href="">April 19th: Cat Frisbee</a>
+                    </div>
+                  
+                    <div class="event">
+                      <a href="">April 23rd: Kitten Demonstration</a>
+                    </div>
+                  
+                </div>
+              </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </article>
+  </section>
+<!--  <section class='panel three' id='panelThree'>
+    <article>
+      <div class='container'>
+        <header>
+          <h1>Panel Three</h1>
+        </header>
+        <div class='content'>
+          <p>I am the last of my species, and I know how that weighs on the heart so don't lie to me! I am the last of my species, and I know how that weighs on the heart so don't lie to me! It's art! A statement on modern society, 'Oh Ain't Modern Society Awful?'! Stop talking, brain thinking. Hush. I'm the Doctor, I'm worse than everyone's aunt. *catches himself* And that is not how I'm introducing myself. No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister.</p>
+          <p>Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you? Did I mention we have comfy chairs? No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister. You know how I sometimes have really brilliant ideas? *Insistently* Bow ties are cool! Come on Amy, I'm a normal bloke, tell me what normal blokes do!</p>
+        </div>
+      </div>
+    </article>
+  </section> -->
+
+</div>
+
+
+ <script type="text/template" id="clndr-template">
+    <div class="clndr-controls">
+      <div class="clndr-previous-button">&lsaquo;</div>
+      <div class="month"><%= month %></div>
+      <div class="clndr-next-button">&rsaquo;</div>
+    </div>
+    <div class="clndr-grid">
+      <div class="days-of-the-week">
+        <% _.each(daysOfTheWeek, function(day) { %>
+          <div class="header-day"><%= day %></div>
+        <% }); %>
+        <div class="days">
+          <% _.each(days, function(day) { %>
+            <div class="<%= day.classes %>"><%= day.day %></div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    <div class="clndr-today-button">Today</div>
+  </script>
+
+</body>
+
+</html>

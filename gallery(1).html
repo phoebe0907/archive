@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Every Day</title>
+    
+    <link rel="stylesheet" href="css/default.css" />
+	<script type="text/javascript" src="js/jquery.min.js"> </script>
+	<script type="text/javascript" src="js/jquery.mixitup.js"> </script>
+</head>
+
+<body>
+    <div id='header'>
+  <nav>
+    <a href='home.html'>About</a>
+    <a href='timeline.html'>Timeline</a>
+    <a href='gallery.html'>Gallery</a>
+    <span id='location'></span>
+  </nav>
+</div>
+<div class='panelize'>
+  <section class='panel one' id='panelOne'>
+    <article>
+      <div class='container'>
+        <header>
+          <h1>Every Day</h1>
+          <p><br><br><br><br><br><br><br><br><br><br><br><br><br></p> 
+        </header>
+        <div class='content' id="content1">
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class='panel two' id='panelTwo'>
+    <article>
+      <div class='container'>
+        <header>
+          <!-- <h1>Panel Two</h1> -->
+        </header>
+        <div class='content'>
+          <p id="instruction">Numbers Filter (1–10)</p>
+
+			<!--First Group of Buttons-->
+			<div id="group_1">
+				<button class="filter" id="odd_1" data-filter=".category-1">Odd Numbers</button>
+				<button class="filter" id="even_1" data-filter=".category-2">Even Numbers</button>
+			</div>
+
+			<!--Second Group of Buttons when Odd Numbers are Chosen-->
+			<div id="group_2">
+				<button class="filter" id="odd_final_1" class="odd_2" data-filter=".category-1.category-3">Less than 5</button>
+				<button class="filter" id="odd_final_2" class="odd_2" data-filter=".category-1.category-4">Equal or Greater than 5</button>
+			</div>
+
+			<!--Second Group of Buttons when Even Numbers are Chosen-->
+			<div id="group_3">
+				<button class="filter" id="even_final_1" class="even_2" data-filter=".category-2.category-3">Less than 5</button>
+				<button class="filter" id="even_final_2" class="even_2" data-filter=".category-2.category-4">Equal or Greater than 5</button>
+			</div>
+
+			<!--The reset button-->
+			<button id="reset"> Start Over </button>
+
+			<!--All Possible Answers to be sorted-->
+			<div id="mix" class="container-img"> 
+				<div class="mix category-2 category-3" data-myorder="2"></div>
+				<div class="mix category-2 category-3" data-myorder="4"></div>
+				<div class="mix category-1 category-3" data-myorder="1"></div>
+				<div class="mix category-1 category-3" data-myorder="3"></div>
+				<div class="mix category-1 category-4" data-myorder="5"></div>
+				<div class="mix category-2 category-4" data-myorder="6"></div>
+				<div class="mix category-1 category-4" data-myorder="7"></div>
+				<div class="mix category-2 category-4" data-myorder="8"></div>
+				<div class="mix category-1 category-4" data-myorder="9"></div>
+				<div class="mix category-2 category-4" data-myorder="10"></div>
+			</div>
+        
+        </div>
+    </div>
+  </article>
+</section>
+</div>
+
+
+</body>
+
+</html>

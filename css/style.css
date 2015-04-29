@@ -1,0 +1,270 @@
+#header {
+  position: fixed;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+#header nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#header a {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+#header a:hover, #header a.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#position-block {
+  position: fixed;
+  z-index: 1000;
+  color: white;
+}
+
+/*h1 {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  font-size: 69px;
+  line-height: 78px;
+  padding: 20px 0px 10px 20px;
+  margin: 0;
+}*/
+h1{
+	background-color: rgba(82,96,117,0.5);
+	-webkit-background-clip: text;
+	color: #dfdfdf;
+	text-shadow: rgba(255,255,255,0.5) 0 5px 6px;
+	margin:0px auto;
+	margin-top:150px;
+	font-family:'DancingScript', Helvetica, Arial;
+	font-weight:bold;
+	font-size:120px;
+	/*border-top:1px dashed #dfdfdf;
+	border-bottom:1px dashed #dfdfdf;*/
+	padding:20px;
+	width:700px;
+	text-align:center;
+}
+h2 {
+	background-color: rgba(82,96,117,0.5);
+	-webkit-background-clip: text;
+	color: #dfdfdf;
+	text-shadow: rgba(255,255,255,0.5) 0 5px 6px;
+	margin:0px auto;
+	font-family:'DancingScript', Helvetica, Arial;
+	font-weight:bold;
+	font-size:60px;
+	/*border-top:1px dashed #dfdfdf;
+	border-bottom:1px dashed #dfdfdf;*/
+	padding:20px;
+	width:700px;
+	text-align:center;
+}
+@font-face{
+   font-family:DancingScript;
+   src:url(../font/DancingScript-Bold.ttf);
+}
+p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 0px;
+  text-align: justify;
+}
+
+article {
+  position: relative;
+/*  -moz-box-shadow: black 0px 0px 15px;
+  -webkit-box-shadow: black 0px 0px 15px;
+  box-shadow: black 0px 0px 15px; */
+}
+article header {
+  padding-top: 30px;
+}
+article .content {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 60px;
+  -webkit-column-gap: 60px;
+  column-gap: 60px;
+  padding: 0 20px 60px 20px;
+}
+article .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+}
+
+.panel.one article {
+  background-image: url("../images/home-background.png");
+  background-repeat:no-repeat;
+  width:100%;
+  height:100%;
+}
+
+.panel.two article {
+  background-color: #fffef9;
+  opacity: 0.8;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.panel.three article {
+  background-image: url("../images/home-background.png");
+  background-repeat:no-repeat;
+  width:100%;
+  height:100%;
+}
+/*-------------------------calendar----------------------------------*/
+.cal1 {
+  margin: 30px auto;
+  max-width: 600px;
+  font-family: 'Droid Sans Mono';
+  font-size: 14px;
+}
+.cal1 .clndr .clndr-controls {
+  display: inline-block;
+  width: 150%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button {
+  float: left;
+  width: 33%;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.cal1 .clndr .clndr-controls .month {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button.rightalign {
+  text-align: right;
+  width: 34%;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.cal1 .clndr .clndr-table {
+  table-layout: fixed;
+  width: 150%;
+  /*width of the calendar*/
+}
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.cal1 .clndr .clndr-table .header-days {
+  height: 50px;
+  font-size: 10px;
+  background: #dfdfdf;
+}
+.cal1 .clndr .clndr-table .header-days .header-day {
+  vertical-align: middle;
+  text-align: center;
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
+  color: #fff;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.cal1 .clndr .clndr-table tr {
+  height: 85px;
+}
+.cal1 .clndr .clndr-table tr .empty, .cal1 .clndr .clndr-table tr .adjacent-month, .cal1 .clndr .clndr-table tr .my-empty, .cal1 .clndr .clndr-table tr .my-adjacent-month {
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
+  width: 100%;
+  height: inherit;
+  background: #eee;
+}
+.cal1 .clndr .clndr-table tr .day .day-contents {
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 12px;
+  text-align: right;
+}
+.cal1 .clndr .clndr-table tr .day {
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
+  width: 100%;
+  height: inherit;
+}
+.cal1 .clndr .clndr-table tr:last-child .day, .cal1 .clndr .clndr-table tr:last-child .my-day {
+  border-bottom: 1px solid #000000;
+}
+.cal1 .clndr .clndr-table tr .day.today, .cal1 .clndr .clndr-table tr .day.my-today {
+  background: #9AD6E3;
+}
+.cal1 .clndr .clndr-table tr .day:last-child {
+  border-right: 1px solid #000000;
+}
+.cal1 .clndr .clndr-table .header-days .header-day:last-child {
+  border-right: 1px solid #000000;
+}
+#mini-clndr .clndr .days-container .days .day.event, #mini-clndr .clndr .days-container .days .empty.event {
+  background-color: #d2d2d2;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+
+
+#clndr-size {
+	/*border: solid 1px green;*/
+	height: 630px;
+	width: 280%;
+	margin-left:-330px;
+}
+
+
+/*-------------------------calendar-img----------------------------*/
+#clndr-0401{
+  background-image:url("../images/archive/12.jpg");
+  width:100%;
+  height:100%;
+}
+
+/*-------------------------gallery-img----------------------------*/
+.gallery-img{
+ width:180%;
+ height:120%;
+ margin-left:-120px;
+}
+/*-------------------------image-hover----------------------------*/
+.Februray-1 a:hover, a:active{
+  background-color: #000000;
+  border: 1px solid black;
+  opacity:0.4;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+
+}
