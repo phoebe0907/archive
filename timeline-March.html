@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Every Day</title>
+    <link rel="icon" href="images/home-background.png" sizes="16x16" type="image/png"> 
+    
+    <!-- Navigation-->
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script>
+    
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="js/js/jquery.touchSwipe.min.js" type="text/javascript"></script>
+    <script src="js/js/jquery.imagesloaded.min.js" type="text/javascript"></script>
+    <script src="js/js/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
+    <script src="js/js/spin.min.js" type="text/javascript"></script>
+    <script src="js/js/portfolio.js" type="text/javascript"></script>   
+</head>
+
+<body>
+    <div id='header'>
+  <nav>
+    <a href='index.html'>About</a>
+    <a href='May-timeline.html'>Timeline</a>
+    <a href='gallery-May.html'>Gallery</a>
+    <!--<nav class="nav-collapse">
+       <ul>
+          <li><a href="#">January</a></li>
+          <li><a href="#">February</a></li>
+          <li><a href="#">March</a></li>
+          <li><a href="#">April</a></li>
+       </ul>
+    </nav>-->
+    <span id='location'></span>
+  </nav>
+</div>
+<div class='panelize'>
+  <section class='panel one' id='panelOne'>
+    <article>
+      <div class='container'>
+        <header>
+          <h1>Every Day</h1>
+          <p><br><br><br><br><br><br><br><br><br><br><br><br><br></p> 
+        </header>
+        <div class='content' id="content1">
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class='panel two' id='panelTwo'>
+    <article>
+      <div class='container'>
+        <header>
+          <a class="prevmonth"  href="timeline-February.html"><img src="images/l-arrow.png" style="width: 40px; height:40px;"> </a>
+          <h2>March</h2>
+          <a class="nextmonth" href="timeline-April.html"><img src="images/r-arrow.png" style="top:-100px ;width: 40px; height:40px;"> </a>          
+        </header>
+        <div id="content" class='gallery-img'>
+        <h3 id='slide'>Slide to View Pictures</h3>
+        <span class="gallery-arrow-left" style="position: absolute; left: 8px; height: 500px; width: 50px; z-index: 9999; opacity: 0.5; background: url(data:image/png;base64,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) 8px 50% no-repeat;"></span>
+        <div id="gallery" style="width: 100%; max-height: 500px; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
+        <img class='March-1' data-src="images/archive/03-01.jpg" loaded="true" first="true" src="images/archive/03-01.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-04.jpg" loaded="true" first="true" src="images/archive/03-04.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-05.jpg" loaded="true" first="true" src="images/archive/03-05.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-06.jpg" loaded="true" first="true" src="images/archive/03-06.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-07.jpg" loaded="true" first="true" src="images/archive/03-07.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-08.jpg" loaded="true" first="true" src="images/archive/03-08.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-09.jpg" loaded="true" first="true" src="images/archive/03-09.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-10.jpg" loaded="true" first="true" src="images/archive/03-10.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-11.jpg" loaded="true" first="true" src="images/archive/03-11.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-12.jpg" loaded="true" first="true" src="images/archive/03-12.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-13.jpg" loaded="true" first="true" src="images/archive/03-13.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-16.jpg" loaded="true" first="true" src="images/archive/03-16.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-17.jpg" loaded="true" first="true" src="images/archive/03-17.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-18.jpg" loaded="true" first="true" src="images/archive/03-18.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-19.jpg" loaded="true" first="true" src="images/archive/03-19.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-20.jpg" loaded="true" first="true" src="images/archive/03-20.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-22.jpg" loaded="true" first="true" src="images/archive/03-22.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-23.jpg" loaded="true" first="true" src="images/archive/03-23.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-24.jpg" loaded="true" first="true" src="images/archive/03-24.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-26.jpg" loaded="true" first="true" src="images/archive/03-26.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-27.jpg" loaded="true" first="true" src="images/archive/03-27.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-28.jpg" loaded="true" first="true" src="images/archive/03-28.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-29.jpg" loaded="true" first="true" src="images/archive/03-29.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-30.jpg" loaded="true" first="true" src="images/archive/03-30.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+        <img class='March-1' data-src="images/archive/03-31.jpg" loaded="true" first="true" src="images/archive/03-31.jpg" style="max-width: none; height: 500px; width: auto; margin-left: 5px;">
+      
+        </div>
+        
+        <div class="box-bottom"><h3><a href="March-timeline.html">Back</a></h3></div>
+       </div> <!-- content -->
+    </div>
+  </article>
+</section>
+</div>
+
+<script>
+    $(document).ready(function() {
+            var p = $("#gallery").portfolio();
+            p.init();
+    });
+</script>
+
+<!-- Navigation -->
+<script>
+  var nav = responsiveNav(".nav-collapse");
+</script>
+</body>
+
+</html>

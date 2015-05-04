@@ -1,3 +1,4 @@
+/*------------------------------------slide----------------------------------------*/
 (function() {
   (function($, window, document, undefined_) {
     var Panelize;
@@ -167,3 +168,4 @@ p = $('#gallery').portfolio({
         lightbox: false, // dim off other images, highlights only currently viewing image
         logger: false // for debugging purpose, turns on/off console.log() statements in the script
     });
+/*------------------------------Fade------------------------------------*/

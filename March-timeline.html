@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <title>Every Day</title>
+    <link rel="icon" href="images/home-background.png" sizes="16x16" type="image/png"> 
+
+</head>
+
+<body>
+    <div id='header'>
+  <nav>
+    <a href='index.html'>About</a>
+    <a href='May-timeline.html'>Timeline</a>
+    <a href='gallery-May.html'>Gallery</a>
+    <span id='location'></span>
+  </nav>
+</div>
+<div class='panelize'>
+  <section class='panel one' id='panelOne'>
+    <article>
+      <div class='container'>
+        <header>
+          <h1>Every Day</h1>
+          <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        </header>
+        <div class='content' id="content1">
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class='panel two' id='panelTwo'>
+    <article>
+      <div class="container">
+        <div class='content' id="clndr-size">
+           <!-- The calendar block is initialized by javascript. -->
+    <div id='clndr' class="yui3-widget yui3-calendarbase yui3-calendar yui3-squarespacecalendar loaded">
+        <div class="yui3-squarespacecalendar-content small-layout">
+            <div class="yui3-g yui3-calendar-pane">
+                <div class="yui3-g yui3-calendar-header">
+                    <a class="yui3-u yui3-calendarnav-prevmonth"  href="February-timeline.html"><img src="images/l-arrow.png" style="width: 40px; height:40px;"> </a>
+                    <h1><div class="yui3-u yui3-calendar-header-label" id='April'>March 2015</div></h1>
+                    <a class="yui3-u yui3-calendarnav-nextmonth" href="April-timeline.html"><img src="images/r-arrow.png" style="width: 40px; height:40px;"> </a>
+                </div>
+                <div id='clndr-inside' class="yui3-u-1">
+                    <table class="yui3-calendar-grid" aria-label="April 2015" style="width: 662px;">
+                        <thead>
+                            <tr class="yui3-calendar-weekdayrow">
+                                <th class="yui3-calendar-weekday">Su</th>
+                                <th class="yui3-calendar-weekday">Mo</th>
+                                <th class="yui3-calendar-weekday">Tu</th>
+                                <th class="yui3-calendar-weekday">We</th>
+                                <th class="yui3-calendar-weekday">Th</th>
+                                <th class="yui3-calendar-weekday">Fr</th>
+                                <th class="yui3-calendar-weekday">Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr class="yui3-calendar-row" role="row">
+                                <td class="calendar_col0 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">2</td>
+                                <td class="calendar_col1 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">3</td>
+                                <td class="calendar_col2 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">4</td>
+                                <td class="calendar_col3 yui3-calendar-day  has-event sunday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum"> 1</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-01.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col4 yui3-calendar-day  monday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum"> 2</div>
+                                    </div>
+                                </td>
+                                <td class="calendar_col5 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum"> 3</div>
+                                    </div>
+                                </td>
+                                <td class="calendar_col6 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum"> 4</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-04.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col7 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum"> 5</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-05.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col8 yui3-calendar-day friday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">6</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-06.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col9 yui3-calendar-day has-event saturday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">7</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-07.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col10 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">12</td>
+                                <td class="calendar_col11 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">13</td>
+                                <td class="calendar_col12 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">14</td>
+                            </tr>
+                            <tr class="yui3-calendar-row" role="row">
+                                <td class="calendar_col0 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">9</td>
+                                <td class="calendar_col1 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">10</td>
+                                <td class="calendar_col2 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">11</td>
+                                <td class="calendar_col3 yui3-calendar-day  sunday"  style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">8</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-08.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col4 yui3-calendar-day  monday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">9</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-09.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col5 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">10</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-10.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col6 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">11</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-11.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col7 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">12</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-12.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col8 yui3-calendar-day friday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">13</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-13.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col9 yui3-calendar-day saturday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">14</div>
+                                    </div>
+                            
+                                </td>
+                                <td class="calendar_col10 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">19</td>
+                                <td class="calendar_col11 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">20</td>
+                                <td class="calendar_col12 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">21</td>
+                            </tr>
+                            <tr class="yui3-calendar-row" role="row">
+                                <td class="calendar_col0 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">16</td>
+                                <td class="calendar_col1 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">17</td>
+                                <td class="calendar_col2 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">18</td>
+                                <td class="calendar_col3 yui3-calendar-day  sunday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">15</div>
+                                    </div>
+                                   
+                                </td>
+                                <td class="calendar_col4 yui3-calendar-day  monday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">16</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-16.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col5 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">17</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-17.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col6 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">18</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-18.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col7 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">19</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-19.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col8 yui3-calendar-day friday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">20</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-20.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col9 yui3-calendar-day has-event saturday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">21</div>
+                                    </div>
+                                </td>
+                                <td class="calendar_col10 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">26</td>
+                                <td class="calendar_col11 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">27</td>
+                                <td class="calendar_col12 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">28</td>
+                            </tr>
+                            <tr class="yui3-calendar-row" role="row">
+                                <td class="calendar_col0 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">23</td>
+                                <td class="calendar_col1 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">24</td>
+                                <td class="calendar_col2 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">25</td>
+                                <td class="calendar_col3 yui3-calendar-day  has-event sunday" role="gridcell" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">22</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-22.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col4 yui3-calendar-day  monday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">23</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-23.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col5 yui3-calendar-day " style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">24</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-24.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col6 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">25</div>
+                                    </div>
+                                </td>
+                                <td class="calendar_col7 yui3-calendar-day" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">26</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-26.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                <td class="calendar_col8 yui3-calendar-day friday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">27</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-27.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col9 yui3-calendar-day has-event saturday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">28</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-28.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col10 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">12</td>
+                                <td class="calendar_col11 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">13</td>
+                                <td class="calendar_col12 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">14</td>
+                            </tr>
+                            <tr class="yui3-calendar-row" role="row">
+                                <td class="calendar_col0 yui3-calendar-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">23</td>
+                                <td class="calendar_col1 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">24</td>
+                                <td class="calendar_col2 yui3-calendar-day  yui3-calendar-column-hidden" style="width: 90px; height: 90px;">25</td>
+                                <td class="calendar_col3 yui3-calendar-day  has-event sunday" role="gridcell" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">29</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-29.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col4 yui3-calendar-day  monday" style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">30</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-30.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                <td class="calendar_col5 yui3-calendar-day " style="width: 90px; height: 90px;">
+                                    <div class="marker">
+                                        <div class="marker-daynum">31</div>
+                                    </div>
+                                    <div class="background">
+                                        <a href="timeline-March.html"><img src="images/archive/03-31.jpg" style="top: 0px; left: 0px; width: 90px; height: 90px; position: relative;"></a>
+                                    </div>
+                                </td>
+                                 <td class="calendar_col6 yui3-calendar-nextmonth-day" style="width: 90px; height: 90px;">&nbsp;</td>
+                                <td class="calendar_col7 yui3-calendar-nextmonth-day" style="width: 90px; height: 90px;">&nbsp;</td>
+                                <td class="calendar_col8 yui3-calendar-nextmonth-day" style="width: 90px; height: 90px;">&nbsp;</td>
+                                <td class="calendar_col9 yui3-calendar-nextmonth-day" style="width: 90px; height: 90px;">&nbsp;</td>
+                                <td class="calendar_col10 yui3-calendar-nextmonth-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">&nbsp;</td>
+                                <td class="calendar_col11 yui3-calendar-nextmonth-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">&nbsp;</td>
+                                <td class="calendar_col12 yui3-calendar-nextmonth-day yui3-calendar-column-hidden" style="width: 90px; height: 90px;">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+           </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+
+
+ <script type="text/template" id="clndr-template">
+    <div class="clndr-controls">
+      <div class="clndr-previous-button">&lsaquo;</div>
+      <div class="month"><%= month %></div>
+      <div class="clndr-next-button">&rsaquo;</div>
+    </div>
+    <div class="clndr-grid">
+      <div class="days-of-the-week">
+        <% _.each(daysOfTheWeek, function(day) { %>
+          <div class="header-day"><%= day %></div>
+        <% }); %>
+        <div class="days">
+          <% _.each(days, function(day) { %>
+            <div class="<%= day.classes %>"><%= day.day %></div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    <div class="clndr-today-button">Today</div>
+  </script>
+
+</body>
+
+</html>
