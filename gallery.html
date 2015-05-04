@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.sliphover.min.js"></script>
+ 
+    <title>Every Day</title>   
+    <link rel="icon" href="images/home-background.png" sizes="16x16" type="image/png">  
+</head>
+
+<body>
+    <div id='header'>
+  <nav>
+    <a href='index.html'>About</a>
+    <a href='May-timeline.html'>Timeline</a>
+    <a href='gallery-May.html'>Gallery</a>
+    <span id='location'></span>
+    <nav class="nav-collapse">
+       <!--<ul>
+          <li><a href="#">January</a></li>
+          <li><a href="#">February</a></li>
+          <li><a href="#">March</a></li>
+          <li><a href="#">April</a></li>
+       </ul>-->
+    </nav>
+  </nav>
+</div>
+<div class='panelize'>
+  <section class='panel one' id='panelOne'>
+    <article>
+      <div class='container' id='home-sec1'>
+        <header>
+          <h1>Every Day</h1>
+          <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        </header>
+        <div class='content' id="content1">
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class='panel two' id='panelTwo'>
+    <article>
+      <div class='container' id='hover-gallery'>
+        <header>
+        </header>
+     
+           <div class="wrapper">
+           <header>
+          <a class="prevmonth"  href="gallery-March.html"><img src="images/l-arrow.png" style="width: 40px; height:40px;"> </a>
+          <h2 id='gallery-title'>April</h2>
+          <a class="nextmonth" href="gallery-May.html"><img src="images/r-arrow.png" style="top:-100px ;width: 40px; height:40px;"> </a>
+        </header>
+        <!-- demo begin -->
+        <div class="demo" id="container">
+            <ul>
+                <li>
+                    <a href="timeline-April.html"><img src="images/archive/04-01.jpg" title="I will finish my class around 5:30pm." /></a>
+                </li>
+                 <li>
+                    <a href="timeline-April.html" >
+                    <img src="images/archive/04-03.jpg" title="Why still need to go to lab? It's Friday!" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-04.jpg" title="Nice weather! Just like Summer!" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-05.jpg" title="We will pick you up at 9:45am." />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-09.jpg" title="On the way go back home from lab." />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-10.jpg" title="Do you want to go to Eunice's?" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-12.jpg" title="Meet you at Walter around 12:00." />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-13.jpg" title="-Eat outside? -Yeah" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-16.jpg" title="Where are you?" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-17.jpg" title="-Do you want to go to the lab? -No!I want to sleep. It's weekends." />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-18.jpg" title="Study outside?" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-22.jpg" title="SO Tired!" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-23.jpg" title="On the way to west bank." />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-24.jpg" title="-Homework 4 is the next next week. -Sounds good!" />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-27.jpg" title="You'd better take the umbrella." />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-28.jpg" title="See you at kh4250." />
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline-April.html">
+                    <img src="images/archive/04-30.jpg" title="I have a meeting." />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end -->
+    
+
+      </div>
+    </article>
+  </section>
+</div>
+
+ <script type="text/javascript">
+          $(function(){
+        
+        $('#container').sliphover({
+            duration:600
+        });
+        })
+ </script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46794744-6', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+</body>
+
+</html>
