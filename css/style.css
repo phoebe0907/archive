@@ -9,6 +9,9 @@
   max-width: 900px;
   margin: 0 auto;
 }
+#header nav #hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
 #header a {
   color: white;
   display: inline-block;
@@ -163,7 +166,7 @@ article .container {
 .yui3-calendarnav-prevmonth{
   float: left;
   margin-left:22%;
-  margin-top:16%;
+  margin-top:14.5%;
   text-align: left;
 }
 .yui3-calendarnav-nextmonth {
@@ -209,8 +212,9 @@ article .container {
 #April{
   	font-size:60px;
 }
+
 #clndr{
-  margin-top: -12%;
+  margin-top: -10%;
   margin-left: 12%;
   width:100%;
   height:100%;
@@ -230,7 +234,7 @@ article .container {
 }
 .prevmonth{
   position:relative;
-  top:90px;
+  top:89px;
 }
 
 article #hover-gallery{
